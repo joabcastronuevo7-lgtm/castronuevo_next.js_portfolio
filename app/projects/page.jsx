@@ -33,12 +33,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "Social Media Analytics",
+    title: "Simple Calculator",
     description:
       "Analytics dashboard for tracking social media performance with data visualization, export features, and custom reports.",
     tech: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/joabcastronuevo7-lgtm/calculator",
+    github: "https://github.com/joabcastronuevo7-lgtm/calculator",
     featured: false,
   },
 ];
