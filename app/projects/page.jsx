@@ -3,26 +3,16 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Expense Tracker",
     description:
-      "A full-stack e-commerce solution with cart management, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    link: "#",
-    github: "#",
+      "A simple expense tracker app to manage your finances.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    link: "https://expense-tracker-git-master-joabs-projects-b278e5c1.vercel.app",
+    github: "https://github.com/joabcastronuevo7-lgtm/expense-tracker",
     featured: true,
   },
   {
     id: 2,
-    title: "Task Management App",
-    description:
-      "A collaborative task management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    tech: ["Next.js", "TypeScript", "Prisma", "WebSockets"],
-    link: "#",
-    github: "#",
-    featured: false,
-  },
-  {
-    id: 3,
     title: "to-do-list",
     description:
       "A simple app to manage your tasks and stay productive",
@@ -31,7 +21,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 3,
     title: "Simple Calculator",
     description:
       "A sleek, modern calculator with a dark theme. Perform basic arithmetic operations with an intuitive and beautiful interface.",
