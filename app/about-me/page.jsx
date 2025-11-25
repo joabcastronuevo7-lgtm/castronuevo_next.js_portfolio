@@ -67,7 +67,7 @@ const AboutMe = () => {
           </div>
           <a
             className="inline-flex items-center justify-center rounded-full bg-indigo-500 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white shadow-lg shadow-indigo-900/40 transition hover:bg-indigo-400"
-            href="mailto:hello@joabcastronuevo.dev"
+            href="mailto:joab.castronuevo.7@gmail.com"
           >
             Let&apos;s collaborate
           </a>

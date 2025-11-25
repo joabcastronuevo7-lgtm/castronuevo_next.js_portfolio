@@ -1,17 +1,17 @@
 import Image from "next/image";
 
 const statItems = [
-  { label: "Projects", value: "12+" },
+  { label: "Projects", value: "4" },
   { label: "Skills", value: "React · Next · Tailwind" },
   { label: "Focus", value: "UI Engineering" },
 ];
 
 const Home = () => {
   return (
-    <main className="min-h-screen bg-slate-950 py-16">
+    <main className="min-h-screen bg-slate-950 py-16 flex items-center justify-center">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 md:flex-row md:items-center">
-        <div className="flex-1 space-y-8">
-          <div className="inline-flex items-center gap-3 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-indigo-200">
+        <div className="flex-1 space-y-8 text-center md:text-left">
+          <div className="inline-flex items-center gap-3 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-indigo-200 mx-auto md:mx-0">
             Front-End Developer
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
           </div>
@@ -28,7 +28,7 @@ const Home = () => {
               working with teams that iterate quickly and value design systems.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <a
               className="rounded-full bg-indigo-500 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white shadow-lg shadow-indigo-900/40 transition hover:bg-indigo-400"
               href="/about-me"

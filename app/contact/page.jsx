@@ -1,12 +1,20 @@
 const contacts = [
-  { label: "Email", value: "@joab.castronuevo.7@gmail.com", href: "mailto:joab.castronuevo.7@gmail.com" },
-  { label: "GitHub", value: "github.com/joabcastronuevo", href: "https://github.com/joabcastronuevo" },
+  {
+    label: "Email",
+    value: "joab.castronuevo.7@gmail.com",
+    href: "mailto:joab.castronuevo.7@gmail.com",
+  },
+  {
+    label: "GitHub",
+    value: "github.com/joabcastronuevo",
+    href: "https://github.com/joabcastronuevo7-lgtm",
+  },
 ];
 
 const Contact = () => {
   return (
-    <section className="min-h-[70vh] bg-slate-950 py-16">
-      <div className="mx-auto max-w-4xl space-y-10 rounded-3xl border border-slate-800 bg-slate-900/80 p-12 shadow-2xl shadow-indigo-900/40">
+    <section className="min-h-screen bg-slate-950 py-16 flex items-center justify-center">
+      <div className="mx-auto max-w-4xl w-full space-y-10 rounded-3xl border border-slate-800 bg-slate-900/80 p-8 md:p-12 shadow-2xl shadow-indigo-900/40">
         <div className="space-y-4 text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-indigo-300">
             Contact
@@ -38,33 +46,51 @@ const Contact = () => {
           ))}
         </div>
 
-        <form className="space-y-6 rounded-3xl border border-slate-800 bg-slate-950/60 p-10 shadow-inner shadow-black/20">
+        <form className="space-y-6 rounded-3xl border border-slate-800 bg-slate-950/60 p-6 md:p-10 shadow-inner shadow-black/20">
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold uppercase tracking-wider text-slate-300">
+            <label
+              htmlFor="name"
+              className="text-sm font-semibold uppercase tracking-wider text-slate-300"
+            >
               Name
             </label>
             <input
-              className="rounded-2xl border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-white outline-none transition focus:border-indigo-400 focus:bg-slate-900"
+              id="name"
+              name="name"
+              className="rounded-2xl border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition focus:border-indigo-400 focus:bg-slate-900"
               placeholder="Your full name"
+              required
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold uppercase tracking-wider text-slate-300">
+            <label
+              htmlFor="email"
+              className="text-sm font-semibold uppercase tracking-wider text-slate-300"
+            >
               Email
             </label>
             <input
-              className="rounded-2xl border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-white outline-none transition focus:border-indigo-400 focus:bg-slate-900"
-              placeholder="you@example.com"
+              id="email"
+              name="email"
               type="email"
+              className="rounded-2xl border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition focus:border-indigo-400 focus:bg-slate-900"
+              placeholder="you@example.com"
+              required
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold uppercase tracking-wider text-slate-300">
+            <label
+              htmlFor="message"
+              className="text-sm font-semibold uppercase tracking-wider text-slate-300"
+            >
               Message
             </label>
             <textarea
-              className="min-h-[160px] rounded-2xl border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-white outline-none transition focus:border-indigo-400 focus:bg-slate-900"
+              id="message"
+              name="message"
+              className="min-h-[160px] rounded-2xl border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition focus:border-indigo-400 focus:bg-slate-900 resize-none"
               placeholder="Tell me about your project..."
+              required
             />
           </div>
           <button
