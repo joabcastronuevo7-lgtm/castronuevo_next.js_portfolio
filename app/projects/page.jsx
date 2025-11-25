@@ -35,9 +35,9 @@ const projects = [
     id: 4,
     title: "Simple Calculator",
     description:
-      "Analytics dashboard for tracking social media performance with data visualization, export features, and custom reports.",
-    tech: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-    link: "https://github.com/joabcastronuevo7-lgtm/calculator",
+      "A sleek, modern calculator with a dark theme. Perform basic arithmetic operations with an intuitive and beautiful interface.",
+    tech: ["next.js", "React", "TypeScript", "Tailwind CSS"],   
+    link: "https://calculator-git-master-joabs-projects-b278e5c1.vercel.app",
     github: "https://github.com/joabcastronuevo7-lgtm/calculator",
     featured: false,
   },
