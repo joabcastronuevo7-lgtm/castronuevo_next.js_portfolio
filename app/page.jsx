@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const statItems = [
-  { label: "Projects", value: "4" },
+  { label: "Projects", value: "3" },
   { label: "Skills", value: "React · Next · Tailwind" },
   { label: "Focus", value: "UI Engineering" },
 ];
