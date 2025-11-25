@@ -23,12 +23,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "to-do-list",
     description:
-      "A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-    tech: ["React", "Tailwind CSS", "OpenWeather API"],
-    link: "#",
-    github: "#",
+      "A simple app to manage your tasks and stay productive",
+    link: "https://to-do-list-git-master-joabs-projects-b278e5c1.vercel.app",
+    github: "https://github.com/joabcastronuevo7-lgtm/to-do-list",
     featured: false,
   },
   {
@@ -87,16 +86,18 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full border border-slate-700 bg-slate-800/50 px-3 py-1 text-xs text-slate-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                {project.tech && (
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-slate-700 bg-slate-800/50 px-3 py-1 text-xs text-slate-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <div className="flex items-center gap-4 pt-4">
                   <a
